@@ -4,19 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const closeModal = document.getElementById("closeModal");
     const body = document.body;
 
-    // Open the modal
+    
     contactButton.addEventListener("click", () => {
         contactModal.style.display = "flex";
         body.classList.add("modal-active");
     });
 
-    // Close the modal
+    
     closeModal.addEventListener("click", () => {
         contactModal.style.display = "none";
         body.classList.remove("modal-active");
     });
 
-    // Close modal when clicking outside the content
+    
     window.addEventListener("click", (event) => {
         if (event.target === contactModal) {
             contactModal.style.display = "none";
